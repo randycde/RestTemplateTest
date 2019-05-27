@@ -46,11 +46,5 @@ public class RestTemplateConfig {
         return clientHttpRequestFactory;
     }
 
-    @Bean
-    public TaskScheduler taskScheduler() {
-        ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
-        scheduler.setThreadNamePrefix("poolScheduler");
-        scheduler.setPoolSize(50);
-        return scheduler;
-    }
+
 }
